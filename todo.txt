@@ -1,0 +1,24 @@
+- documentation
+
+HOME:
+- slider
+
+COMPONENTS:
+
+- Navigation
+- visiting hours
+- pricing
+- contact:
+  - address, map, contact form
+
+PAGES:
+- events
+- categories (animals, by category)
+  - animal page
+
+- Get Ticket:
+  - pricing, ticket form
+
+DONE:
+- Gallery
+- Footer
