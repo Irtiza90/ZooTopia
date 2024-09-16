@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="./gallery.css">
+</head>
+<body>
+  <!-- Header -->
+  <div class="header">
+    <h1>Animal gallery</h1>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <div class="container">
+        <img src="/Users/BLACKY/Desktop/aptech/images/3.jpg" alt="Avatar" class="image" style="width: 100%" />
+        <div class="overlay">
+          <div class="text">African lion</div>
+        </div>
+      </div>
+      <div class="container">
+        <img src="/Users/BLACKY/Desktop/aptech/images/8.jpg" alt="Avatar" class="image" style="width: 100%" />
+        <div class="overlay">
+          <div class="text">Giraffe</div>
+        </div>
+      </div>
+      <div class="container">
+        <img src="/Users/BLACKY/Desktop/aptech/images/12.jpg" alt="Avatar" class="image" style="width: 100%" />
+        <div class="overlay">
+          <div class="text">african elephant</div>
+        </div>
+      </div>
+      <div class="container">
+        <img src="/Users/BLACKY/Desktop/aptech/images/31.jpg" alt="Avatar" class="image" style="width: 100%" />
+        <div class="overlay">
+          <div class="text">Red Panda</div>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="container">
+        <img src="/Users/BLACKY/Desktop/aptech/images/22.jpg" alt="Avatar" class="image" style="width: 100%" />
+        <div class="overlay">
+          <div class="text">Meerkat</div>
+        </div>
+      </div>
+      <div class="container">
+        <img src="/Users/BLACKY/Desktop/aptech/images/25.jpg" alt="Avatar" class="image" style="width: 100%" />
+        <div class="overlay">
+          <div class="text">American Alligato</div>
+        </div>
+      </div>
+      <div class="container">
+        <img src="/Users/BLACKY/Desktop/aptech/images/20.jpg" alt="Avatar" class="image" style="width: 100%" />
+        <div class="overlay">
+          <div class="text">Hippopotamus</div>
+        </div>
+      </div>
+      <div class="container">
+        <img src="/Users/BLACKY/Desktop/aptech/images/16.jpg" alt="Avatar" class="image" style="width: 100%" />
+        <div class="overlay">
+          <div class="text">African lion</div>
+        </div>
+      </div>
+      <div class="container">
+        <img src="/Users/BLACKY/Desktop/aptech/images/17.jpg" alt="Avatar" class="image" style="width: 100%" />
+        <div class="overlay">
+          <div class="text">panda</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- form html -->
+
+  <div class="row">
+    <div class="form">
+      <div class="col-75">
+        <div class="formcontainer">
+          <form action="/action_page.php">
+            <div class="row">
+              <div class="col-50">
+                <h3>Billing Address</h3>
+                <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="John M. Doe" />
+                <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                <input type="text" id="email" name="email" placeholder="john@example.com" />
+                <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                <input type="text" id="adr" name="address" placeholder="542 W. 15th Street" />
+                <label for="city"><i class="fa fa-institution"></i> City</label>
+                <input type="text" id="city" name="city" placeholder="New York" />
+
+                <div class="row">
+                  <div class="col-50">
+                    <label for="state">State</label>
+                    <input type="text" id="state" name="state" placeholder="NY" />
+                  </div>
+                  <div class="col-50">
+                    <label for="zip">Zip</label>
+                    <input type="text" id="zip" name="zip" placeholder="00000" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-50">
+                <h3>Payment</h3>
+                <label for="fname">Accepted Cards</label>
+                <label for="cname">Name on Card</label>
+                <input type="text" id="cname" name="cardname" placeholder="Aptech" />
+                <label for="ccnum">Credit card number</label>
+                <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" />
+                <label for="expmonth">Exp Month</label>
+                <input type="text" id="expmonth" name="expmonth" placeholder="September" />
+                <div class="row">
+                  <div class="col-50">
+                    <label for="expyear">Exp Year</label>
+                    <input type="text" id="expyear" name="expyear" placeholder="2025" />
+                  </div>
+                  <div class="col-50">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="111" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <label> <input type="checkbox" checked="checked" name="sameadr" /> Shipping address same as billing </label>
+            <input type="submit" value="Continue to checkout" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
