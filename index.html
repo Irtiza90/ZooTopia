@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link rel="stylesheet" href="./nav.css">
+  <link rel="stylesheet" href="./footer.css" />
+  <link rel="stylesheet" href="./pricing.css" />
+  <link rel="stylesheet" href="./gallery.css">
+</head>
+<body>
+  <header>
+    <div class="topnav" id="myTopnav">
+      <a href="/" style="width: 50px; height: 50px; padding: 0; background: none !important; padding-right: 10px;">
+        <img src="./bird.png" style="width: 50px;height: 50px;float: left;object-fit: contain;">
+      </a>
+  
+      <a href="#home" class="active">Home</a>
+  
+      <div class="dropdown">
+        <button class="dropbtn">Categories</button>
+        <div class="dropdown-content">
+          <a href="#">Land</a>
+          <a href="#">Aquatic</a>
+          <a href="#">Aerial</a>
+        </div>
+      </div>
+      
+      <div class="dropdown">
+        <button class="dropbtn">About</button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      
+      <a href="#about">About</a>
+      <a href="javascript:void(0);" class="icon">
+        <i class="fa fa-bars"></i>
+      </a>
+  
+      <a class="active" style="float: right !important; height: 100%;" href="#about">Get Ticket  <i style="margin-left: 4px;" class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  
+    <!-- Top Navigation Menu -->
+    <div class="topnav-mobile">
+      <a href="/" style="width: 50px; height: 50px; padding: 0; background: none !important;">
+        <img src="./bird.png" style="width: 50px;height: 50px;float: left;object-fit: contain;">
+      </a>
+  
+      <div id="myLinks">
+        <a href="/">Home</a>
+        <a href="#">Categories</a>
+        <a href="#">About</a>
+        <a class="active" href="#about" style="
+          padding: 2rem;
+          text-align: end;
+          padding-right: 50px;
+          background: #008000a1;
+        ">Get Ticket  <i style="margin-left: 4px;" class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="mobileMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section id="gallery">
+      <!-- Header -->
+      <div class="header">
+        <h1>Animal gallery</h1>
+      </div>
+      
+      <div class="row">
+        <div class="column">
+          <div class="container">
+            <img src="./img/giraffe-wild.jpg" alt="Avatar" class="image" style="width: 100%" />
+            <div class="overlay">
+              <div class="text">African lion</div>
+            </div>
+          </div>
+          <div class="container">
+            <img src="./img/giraffe-wild.jpg" alt="Avatar" class="image" style="width: 100%" />
+            <div class="overlay">
+              <div class="text">Giraffe</div>
+            </div>
+          </div>
+          <div class="container">
+            <img src="./img/giraffe-wild.jpg" alt="Avatar" class="image" style="width: 100%" />
+            <div class="overlay">
+              <div class="text">african elephant</div>
+            </div>
+          </div>
+          <div class="container">
+            <img src="./img/giraffe-wild.jpg" alt="Avatar" class="image" style="width: 100%" />
+            <div class="overlay">
+              <div class="text">Red Panda</div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="container">
+            <img src="./img/giraffe-wild.jpg" alt="Avatar" class="image" style="width: 100%" />
+            <div class="overlay">
+              <div class="text">Meerkat</div>
+            </div>
+          </div>
+          <div class="container">
+            <img src="./img/giraffe-wild.jpg" alt="Avatar" class="image" style="width: 100%" />
+            <div class="overlay">
+              <div class="text">American Alligato</div>
+            </div>
+          </div>
+          <div class="container">
+            <img src="./img/giraffe-wild.jpg" alt="Avatar" class="image" style="width: 100%" />
+            <div class="overlay">
+              <div class="text">Hippopotamus</div>
+            </div>
+          </div>
+          <div class="container">
+            <img src="./img/giraffe-wild.jpg" alt="Avatar" class="image" style="width: 100%" />
+            <div class="overlay">
+              <div class="text">African lion</div>
+            </div>
+          </div>
+          <div class="container">
+            <img src="./img/giraffe-wild.jpg" alt="Avatar" class="image" style="width: 100%" />
+            <div class="overlay">
+              <div class="text">panda</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="payment-form">
+      <!-- form html -->
+      <div class="row" style="justify-content: center; margin: 2rem 0;">
+        <div class="form">
+          <div class="col-75">
+            <div class="formcontainer">
+              <form action="/action_page.php">
+                <div class="row">
+                  <div class="col-50">
+                    <h3 style="margin-bottom: 20px;">Billing Address</h3>
+                    <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="John M. Doe" />
+                    <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                    <input type="text" id="email" name="email" placeholder="john@example.com" />
+                    <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                    <input type="text" id="adr" name="address" placeholder="542 W. 15th Street" />
+                    <label for="city"><i class="fa fa-institution"></i> City</label>
+                    <input type="text" id="city" name="city" placeholder="New York" />
+
+                    <div class="row">
+                      <div class="col-50">
+                        <label for="state">State</label>
+                        <input type="text" id="state" name="state" placeholder="NY" />
+                      </div>
+                      <div class="col-50">
+                        <label for="zip">Zip</label>
+                        <input type="text" id="zip" name="zip" placeholder="00000" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-50">
+                    <h3>Payment</h3>
+                    <label for="fname">Accepted Cards</label>
+                    <label for="cname">Name on Card</label>
+                    <input type="text" id="cname" name="cardname" placeholder="Aptech" />
+                    <label for="ccnum">Credit card number</label>
+                    <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" />
+                    <label for="expmonth">Exp Month</label>
+                    <input type="text" id="expmonth" name="expmonth" placeholder="September" />
+                    <div class="row">
+                      <div class="col-50">
+                        <label for="expyear">Exp Year</label>
+                        <input type="text" id="expyear" name="expyear" placeholder="2025" />
+                      </div>
+                      <div class="col-50">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="111" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <label> <input type="checkbox" checked="checked" name="sameadr" /> Shipping address same as billing </label>
+                <input type="submit" value="Continue to checkout" class="btn" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+      <div class="table price-table-1">
+        <div class="price">
+          <h1>$29</h1>
+          <small>/mo</small>
+        </div>
+
+        <div class="shadow-container">
+          <div class="table-header">
+            <div class="title">
+              <h1>regular</h1>
+              <p>Lorem ipsum dolor sit</p>
+            </div>
+          </div>
+        </div>
+        <div class="table-body">
+          <div class="body-title">
+            <h2>Lorem ipsum.</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <ul>
+            <li>
+              <i class="fas fa-check"></i>
+              <span>Lorem ipsum dolor sit amet.</span>
+            </li>
+            <li>
+              <i class="fas fa-check"></i>
+              <span>Lorem ipsum dolor sit amet.</span>
+            </li>
+            <li>
+              <i class="fas fa-times"></i>
+              <span>Lorem ipsum dolor sit amet.</span>
+            </li>
+            <li>
+              <i class="fas fa-times"></i>
+              <span>Lorem ipsum dolor sit amet.</span>
+            </li>
+          </ul>
+        </div>
+        <!-- <button>order now</button> -->
+      </div>
+
+      <div class="table price-table-2">
+        <div class="price">
+          <h1>$99</h1>
+          <small>/mo</small>
+        </div>
+
+        <div class="shadow-container">
+          <div class="table-header">
+            <div class="title">
+              <h1>buisness</h1>
+              <p>Lorem ipsum dolor sit</p>
+            </div>
+          </div>
+        </div>
+        <div class="table-body">
+          <div class="body-title">
+            <h2>Lorem ipsum.</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <ul>
+            <li>
+              <i class="fas fa-check"></i>
+              <span>Lorem ipsum dolor sit amet.</span>
+            </li>
+            <li>
+              <i class="fas fa-check"></i>
+              <span>Lorem ipsum dolor sit amet.</span>
+            </li>
+            <li>
+              <i class="fas fa-times"></i>
+              <span>Lorem ipsum dolor sit amet.</span>
+            </li>
+            <li>
+              <i class="fas fa-times"></i>
+              <span>Lorem ipsum dolor sit amet.</span>
+            </li>
+          </ul>
+        </div>
+        <!-- <button>order now</button> -->
+      </div>
+
+      <div class="table price-table-3">
+        <div class="price">
+          <h1>$59</h1>
+          <small>/mo</small>
+        </div>
+
+        <div class="shadow-container">
+          <div class="table-header">
+            <div class="title">
+              <h1>advanced</h1>
+              <p>Lorem ipsum dolor sit</p>
+            </div>
+          </div>
+        </div>
+        <div class="table-body">
+          <div class="body-title">
+            <h2>Lorem ipsum.</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <ul>
+            <li>
+              <i class="fas fa-check"></i>
+              <span>Lorem ipsum dolor sit amet.</span>
+            </li>
+            <li>
+              <i class="fas fa-check"></i>
+              <span>Lorem ipsum dolor sit amet.</span>
+            </li>
+            <li>
+              <i class="fas fa-times"></i>
+              <span>Lorem ipsum dolor sit amet.</span>
+            </li>
+            <li>
+              <i class="fas fa-times"></i>
+              <span>Lorem ipsum dolor sit amet.</span>
+            </li>
+          </ul>
+        </div>
+        <!-- <button>order now</button> -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER start -->
+  <footer>
+    <div class="footer-container">
+      <div class="social-icons">
+        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://x.com"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <div class="footernav">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Cateogries</a></li>
+          <li><a href="">Contact Us</a></li>
+          <li><a href="">About Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footerbottom">
+      <p>
+        Copyright &copy; 2024, Designed by
+        <span class="designer">Aptech-Tigers</span>
+      </p>
+    </div>
+  </footer>
+  <!-- FOOTER /end -->
+
+  <script>
+    function mobileMenu() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+</body>
+</html>
