@@ -1,0 +1,175 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.pricing {
+  background: #e9e9e9;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2em;
+}
+
+.pricing .table.price-table-1 .table-header {
+    background: linear-gradient(331deg, #3f75d9, #44c898);
+}
+
+.pricing .table.price-table-2 .table-header {
+    background: linear-gradient(3311deg, #1ab743, #636836);
+}
+
+.pricing .table.price-table-3 .table-header {
+    background: linear-gradient(331deg, #44c898, #3f75d9);
+}
+
+.pricing .table {
+  margin: 4em 1.5em;
+  text-align: center;
+  position: relative;
+}
+
+.pricing .table-header {
+  width: 20em;
+  height: 13em;
+  background: linear-gradient(331deg, #321d58, #7344c8);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(0 0, 100% 0%, 100% 80%, 50% 100%, 0 80%);
+}
+
+.pricing .shadow-container {
+  filter: drop-shadow(0 1em 1em rgba(0, 0, 0, 0.2));
+}
+
+.pricing .price {
+  background: #fff;
+  width: 6em;
+  height: 5em;
+  position: absolute;
+  top: -3.5em;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 1.5em 1em 1em 1em;
+  border-radius: 50%;
+  z-index: 1;
+  box-shadow: 0 1em 1em rgba(0, 0, 0, 0.3);
+}
+
+.pricing .price h1 {
+  font-size: 1.7em;
+  color: #673ab7;
+}
+
+.pricing .price small {
+  color: #999;
+}
+
+.title {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.title h1 {
+  margin: 0.3em;
+  font-size: 1.6em;
+  letter-spacing: 4px;
+}
+
+.title p {
+  font-size: 0.6em;
+  letter-spacing: 1px;
+}
+
+.pricing .table-body {
+  width: 18em;
+  margin: -4em auto 0 auto;
+  padding: 4em 1em 1em 1em;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 4em rgb(0, 0, 0, 0.1);
+}
+
+.pricing .table-body ul li::marker {
+    content: none !important;
+}
+
+.pricing .body-title h2 {
+  margin: 1em 0 0.2em 0;
+  color: #222;
+}
+
+.pricing .body-title p {
+  color: #777;
+}
+
+.pricing .table ul {
+  margin: 2em 0;
+}
+
+.pricing .table li {
+  padding: 1.3em 0;
+  color: #999;
+  font-size: 0.9em;
+}
+
+.pricing .table li:nth-child(odd) {
+  background: #eee;
+}
+
+.pricing .table li i {
+  margin: 0.3em;
+}
+
+.pricing .table button {
+  /* background: linear-gradient(331deg, #321d58, #7344c8); */
+  color: #fff;
+  border: none;
+  border-radius: 5em;
+  padding: 1.1em 2.3em;
+  text-transform: uppercase;
+  font-family: 600;
+  position: absolute;
+  bottom: -1em;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.pricing .table button :hover {
+  background: #fff !important;
+  color: #111;
+}
+
+.pricing .table:nth-child(odd) {
+  font-size: 15px;
+}
+
+.pricing .table:nth-child(2) .table-header,
+.pricing .table:nth-child(2) button {
+  /* background: linear-gradient(3311deg, #b71a50, #ff3c7d); */
+}
+
+.pricing .table .price h1 {
+  color: #000;
+  font-family: monospace, math, serif;
+}
+
+.table:nth-child(3) .table-header,
+.table:nth-child(3) button {
+  /* background: linear-gradient(3311deg, #cf3c31, #ff5d51); */
+}
+
+.pricing .table:nth-child(3) .price h1 {
+  color: #000;
+}
