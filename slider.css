@@ -1,0 +1,8 @@
+#slider {
+    height: 80svh;
+}
+
+#slider .carousel-item {
+    height: 80svh;
+    object-fit: cover;
+}
