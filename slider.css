@@ -1,8 +1,8 @@
 #slider {
-    height: 80svh;
+    height: 70svh;
 }
 
 #slider .carousel-item {
-    height: 80svh;
+    height: 70svh;
     object-fit: cover;
 }
