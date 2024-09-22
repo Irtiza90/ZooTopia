@@ -15,7 +15,9 @@
   <link rel="stylesheet" href="./payment-form.css">
   <link rel="stylesheet" href="./gallery.css">
 </head>
-<body>
+<body data-loading="true">
+  <span class="loader"></span>
+
   <header>
     <div class="topnav" id="myTopnav">
       <a href="/" class="site-icon">
@@ -426,6 +428,9 @@
         x.style.display = "block";
       }
     }
+  </script>
+  <script>
+    document.body.setAttribute('data-loading', false);
   </script>
 </body>
 </html>
