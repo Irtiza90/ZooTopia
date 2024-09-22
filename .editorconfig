@@ -1,4 +1,4 @@
 root = true
 
-[*.{css}]
+[*.{html,css,js}]
 indent_size = 2
