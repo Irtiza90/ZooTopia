@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="shortcut icon" href="./bird.png" type="image/x-png">
+  
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./nav.css">
+
+    <title>Your Ticket</title>
+    <style>
+      body {
+        background-color: #f8f9fa;
+      }
+      .ticket-card {
+        background-color: #d4edda;
+        border: 1px solid #c3e6cb;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      .ticket-header {
+        background-color: #155724;
+        color: #fff;
+        padding: 10px;
+        border-radius: 10px 10px 0 0;
+      }
+      .ticket-footer {
+        background-color: #c3e6cb;
+        padding: 10px;
+        border-radius: 0 0 10px 10px;
+        text-align: center;
+      }
+      .thank-you {
+        text-align: center;
+        margin: 20px 0;
+        font-size: 1.5em;
+        color: #155724;
+      }
+      .ticket-image {
+        width: 100%;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="topnav" id="myTopnav">
+        <a href="/" class="site-icon">
+          <img src="./bird.png">
+        </a>
+    
+        <a href="#home" class="active">Home</a>
+    
+        <div class="dropdown">
+          <button class="dropbtn">Categories</button>
+          <div class="dropdown-content">
+            <a href="#">Land</a>
+            <a href="#">Aquatic</a>
+            <a href="#">Aerial</a>
+          </div>
+        </div>
+        
+        <div class="dropdown">
+          <button class="dropbtn">About</button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+        
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon">
+          <i class="fa fa-bars"></i>
+        </a>
+    
+        <a class="active get-ticket-btn" href="/checkout.html">Get Ticket  <i style="margin-left: 4px;" class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    
+      <!-- Top Navigation Menu -->
+      <div class="topnav-mobile">
+        <a href="/" style="width: 50px; height: 50px; padding: 0; background: none !important;">
+          <img src="./bird.png" style="width: 50px;height: 50px;float: left;object-fit: contain;">
+        </a>
+    
+        <div id="myLinks">
+          <a href="/">Home</a>
+          <a href="#">Categories</a>
+          <a href="#">About</a>
+          <a class="active" href="#about" style="
+            padding: 2rem;
+            text-align: end;
+            padding-right: 50px;
+            background: #008000a1;
+          ">Get Ticket  <i style="margin-left: 4px;" class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="mobileMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
+
+    <div class="container mt-5">
+      <div class="thank-you">
+        <h2>Thank You for Visiting!</h2>
+        <p>We hope you enjoy your experience.</p>
+      </div>
+      <div class="card ticket-card p-4">
+        <div class="ticket-header">
+          <h3 class="card-title text-center">Your Ticket Information</h3>
+        </div>
+        <img
+          src="https://via.placeholder.com/600x200.png?text=Zoo+Image"
+          alt="Zoo"
+          class="ticket-image"
+        />
+        <div class="card-body">
+          <p><strong>Ticket ID:</strong> <span id="ticket-id"></span></p>
+          <p><strong>Name:</strong> <span id="person-name"></span></p>
+          <p><strong>Date:</strong> <span id="event-date"></span></p>
+          <p><strong>Location:</strong> <span id="event-location"></span></p>
+          <p><strong>Expiry Date:</strong> <span id="expiry-date"></span></p>
+        </div>
+        <div class="ticket-footer">
+          <p class="mb-0">&copy; 2024 ZooTopia. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function generateTicketID() {
+        return "TKT-" + Math.floor(Math.random() * 1000000);
+      }
+
+      function formatDate(date) {
+        return date.toISOString().split("T")[0];
+      }
+
+      function displayTicketInfo(name, date, location) {
+        document.getElementById("ticket-id").innerText = generateTicketID();
+        document.getElementById("person-name").innerText = name;
+        document.getElementById("event-date").innerText = date;
+        document.getElementById("event-location").innerText = location;
+
+        // ticket expires in 1 week
+        const expiryDate = new Date();
+        expiryDate.setDate(expiryDate.getDate() + 7);
+        document.getElementById("expiry-date").innerText =
+          formatDate(expiryDate);
+      }
+
+      const urlParams = new URLSearchParams(window.location.search);
+      const name = urlParams.get('name');
+
+      displayTicketInfo(
+        name,
+        formatDate(new Date()),
+        "Safari Zone"
+      );
+    </script>
+  </body>
+</html>
