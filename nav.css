@@ -25,6 +25,11 @@ header {
   font-size: 17px;
 }
 
+.topnav .get-ticket-btn {
+  height: 3.5rem;
+  float: right !important;
+}
+
 .topnav a:hover {
   background-color: #3e8e41;
   color: white;

@@ -12,10 +12,13 @@ body {
   padding: 32px;
 }
 
-/* Create two equal columns that floats next to each other */
+#gallery .image {
+  object-fit: cover;
+}
+
 .column {
   float: left;
-  width: 50%;
+  width: 33%;
   padding: 10px;
 }
 
