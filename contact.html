@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link rel="shortcut icon" href="./images/bird-logo.png" type="image/x-png">
+
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="./css/site.css">
+  <link rel="stylesheet" href="./css/nav.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/payment-form.css">
+
+  <style>
+    input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+
+    input[type=submit] {
+      background-color: #04AA6D;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body data-loading="true">
+  <span class="loader"></span>
+
+  <header>
+    <div class="topnav" id="myTopnav">
+      <a href="/" class="site-icon">
+        <img src="./images/bird-logo.png">
+      </a>
+  
+      <a href="/" class="active">Home</a>
+  
+      <div class="dropdown">
+        <button class="dropbtn">Categories</button>
+        <div class="dropdown-content">
+          <a href="./category/land.html">Terrestial</a>
+          <a href="./category/aquatic.html">Aquatic</a>
+          <a href="./category/aerial.html">Aerial</a>
+        </div>
+      </div>
+      
+      <a href="./about.html">About</a>
+      <a href="./events.html">Events</a>
+
+      <a href="javascript:void(0);" class="icon">
+        <i class="fa fa-bars"></i>
+      </a>
+  
+      <a class="active get-ticket-btn" href="./checkout.html">Get Ticket  <i style="margin-left: 4px;" class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  
+    <!-- Top Navigation Menu -->
+    <div class="topnav-mobile">
+      <a href="/" style="width: 50px; height: 50px; padding: 0; background: none !important;">
+        <img src="./bird.png" style="width: 50px;height: 50px;float: left;object-fit: contain;">
+      </a>
+  
+      <div id="myLinks">
+        <a href="/">Home</a>
+        <a href="./events.html">Events</a>
+        <a href="./about.html">About</a>
+        <a class="active" href="./checkout.html" style="padding: 2rem; text-align: end; padding-right: 50px; background: #008000a1;">Get Ticket  <i style="margin-left: 4px;" class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="mobileMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </header>
+
+  <main class="my-5">
+    <h1 class="text-center mb-4">Contact US</h1>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <form id="contact-form">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" required name="firstname" placeholder="Your name..">
+    
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" required name="lastname" placeholder="Your last name..">
+    
+            <label for="country">Country</label>
+            <select id="country" name="country" required>
+              <option value="usa">United States</option>
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+            </select>
+    
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" required placeholder="Write something.." style="height:200px"></textarea>
+    
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+        <div class="col-6">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.0170064238528!2d67.07182317525316!3d24.863268745145454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33ea3db108f41%3A0x42acc4507358b160!2sAptech%20Learning%2C%20Shahrah%20e%20Faisal%20Center!5e0!3m2!1sen!2s!4v1727149193124!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      
+    </div>
+  </main>
+
+  <!-- FOOTER start -->
+  <footer>
+    <div class="footer-container">
+      <div class="social-icons">
+        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://x.com"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <div class="footernav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="./events.html">Events</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+          <li><a href="./about.html">About Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footerbottom">
+      <p class="mb-0">
+        Copyright &copy; 2024, Designed by
+        <span class="designer">PR-2024-04F</span>
+      </p>
+    </div>
+  </footer>
+  <!-- FOOTER /end -->
+
+  <script src="./bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="./js/noty.lib.js"></script>
+  <script src="./js/nav.js"></script>
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      Swal.fire({
+        title: 'Message Sent!',
+        text: 'Thank you for contacting us',
+        icon: 'success',
+        confirmButtonText: 'Done'
+      });
+
+      document.getElementById('contact-form').reset();
+    });
+  </script>
+  <script>
+    document.body.setAttribute('data-loading', false);
+  </script>
+</body>
+</html>
