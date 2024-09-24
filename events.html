@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link rel="shortcut icon" href="./images/bird-logo.png" type="image/x-png">
+
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="./css/site.css">
+  <link rel="stylesheet" href="./css/nav.css">
+  <link rel="stylesheet" href="./css/footer.css">
+
+  <style>
+    #events .ev-container {
+      border-radius: 20px;
+      margin-bottom: 50px;
+      box-shadow: 13px 17px 20px 5px #00000054;
+      padding: 0;
+
+      display: flex;
+    }
+
+    #events .image {
+      width: 50%;
+    }
+
+    #events .image img {
+      width: 100%;
+      height: 450px;
+      object-fit: cover;
+
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+    }
+
+    #events .content {
+      width: 50%;
+      color: white;
+      padding: 50px;
+      text-align: center;
+      
+      background-color: #306731;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+
+    #events h3 {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body data-loading="true">
+  <span class="loader"></span>
+
+  <header>
+    <div class="topnav" id="myTopnav">
+      <a href="/" class="site-icon">
+        <img src="./images/bird-logo.png">
+      </a>
+  
+      <a href="/" class="active">Home</a>
+  
+      <div class="dropdown">
+        <button class="dropbtn">Categories</button>
+        <div class="dropdown-content">
+          <a href="./category/land.html">Terrestial</a>
+          <a href="./category/aquatic.html">Aquatic</a>
+          <a href="./category/aerial.html">Aerial</a>
+        </div>
+      </div>
+      
+      <a href="./about.html">About</a>
+      <a href="./events.html">Events</a>
+
+      <a href="javascript:void(0);" class="icon">
+        <i class="fa fa-bars"></i>
+      </a>
+  
+      <a class="active get-ticket-btn" href="./checkout.html">Get Ticket  <i style="margin-left: 4px;" class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  
+    <!-- Top Navigation Menu -->
+    <div class="topnav-mobile">
+      <a href="/" style="width: 50px; height: 50px; padding: 0; background: none !important;">
+        <img src="./bird.png" style="width: 50px;height: 50px;float: left;object-fit: contain;">
+      </a>
+  
+      <div id="myLinks">
+        <a href="/">Home</a>
+        <a href="./events.html">Events</a>
+        <a href="./about.html">About</a>
+        <a class="active" href="./checkout.html" style=" padding: 2rem; text-align: end; padding-right: 50px; background: #008000a1;">
+          Get Ticket  <i style="margin-left: 4px;" class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="mobileMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </header>
+
+  <main class="my-5">
+    <section id="events">
+      <div class="container ev-container">
+        <div class="image">
+          <img src="./images/events/1.jpg" alt="Tropical Rainforest Exploration" />
+        </div>
+        <div class="content">
+          <h3 class="mb-3">Tropical Rainforest Exploration</h3>
+          <p class="timings">Date: Saturday, October 14</p>
+          <p class="timings">Time: 10:30 AM - 12:00 PM</p>
+          <p class="description">
+            Embark on a journey through our tropical rainforest exhibit! Discover exotic plants and animals as our guides share fascinating insights about the ecosystem. Perfect for nature lovers of all ages!
+          </p>
+        </div>
+      </div>
+      
+      <div class="container ev-container">
+        <div class="image">
+          <img src="./images/events/2.jpg" alt="Bunny" />
+        </div>
+        <div class="content" style="background-color: gray;">
+          <h3 class="mb-3">Bunny Hop: Petting Zoo Day</h3>
+          <p class="timings">Date: Sunday, October 15</p>
+          <p class="timings">Time: 1:00 PM - 3:00 PM</p>
+          <p class="description">
+            Bring the whole family for a delightful afternoon at our petting zoo! Kids can meet and interact with friendly rabbits, goats, and more. This event includes fun crafts and educational activities about animal care.
+          </p>
+        </div>
+      </div>
+      
+      <div class="container ev-container">
+        <div class="image">
+          <img src="./images/events/3.jpg" alt="Green Snake" />
+        </div>
+        <div class="content" style="background-color: #248824;">
+          <h3 class="mb-3">Creature Feature: Snake Encounter</h3>
+          <p class="timings">Date: Saturday, October 21</p>
+          <p class="timings">Time: 11:00 AM - 11:45 AM</p>
+          <p class="description">
+            Get ready for a slithering good time! Join our reptile expert for an informative session about our resident snakes. Participants will have the chance to touch a snake and learn about their important role in the ecosystem.
+          </p>
+        </div>
+      </div>
+      
+      <div class="container ev-container">
+        <div class="image">
+          <img src="./images/events/4.jpg" alt="Haunted ride" />
+        </div>
+        <div class="content" style="background-color: #323067;">
+          <h3 class="mb-3">Spooky Zoo Nights</h3>
+          <p class="timings">Date: Friday, October 27 & Saturday, October 28</p>
+          <p class="timings">Time: 6:00 PM - 9:00 PM</p>
+          <p class="description">
+            Join us for a spine-tingling evening filled with fun and frights! Enjoy a haunted trail, spooky animal encounters, and festive activities. Costumes are encouraged, and prizes will be awarded for the best outfits!
+          </p>
+        </div>
+      </div>
+      
+      <div class="container ev-container">
+        <div class="image">
+          <img src="./images/events/5.jpg" alt="Owls sitting" />
+        </div>
+        <div class="content" style="background-color: #30303d;">
+          <h3 class="mb-3">Owl Prowl</h3>
+          <p class="timings">Date: Sunday, November 5</p>
+          <p class="timings">Time: 5:00 PM - 6:30 PM</p>
+          <p class="description">
+            Discover the world of owls during this special evening event! Learn about these fascinating nocturnal creatures with a short presentation followed by a guided walk to observe them in their natural habitat.
+          </p>
+        </div>
+      </div>
+      
+      <div class="container ev-container">
+        <div class="image">
+          <img src="./images/events/6.jpg" alt="Air fair" />
+        </div>
+        <div class="content" style="background-color: gray;">
+          <h3 class="mb-3">Zoological Art Fair</h3>
+          <p class="timings">Date: Saturday, November 11</p>
+          <p class="timings">Time: 10:00 AM - 4:00 PM</p>
+          <p class="description">
+            Explore the intersection of art and wildlife at our annual Zoological Art Fair! Enjoy local artists showcasing animal-themed artwork, interactive art stations, and live demonstrations. A perfect day for art lovers and families!
+          </p>
+        </div>
+      </div>
+      
+      <div class="container ev-container">
+        <div class="image">
+          <img src="./images/events/7.jpg" alt="Holiday Lights" />
+        </div>
+        <div class="content" style="background-color: #cd6100c7;">
+          <h3 class="mb-3">Holiday Lights Spectacular</h3>
+          <p class="timings">Date: Friday, December 1 - Sunday, December 31 (Select nights)</p>
+          <p class="timings">Time: 5:00 PM - 8:00 PM</p>
+          <p class="description">
+            Experience the magic of the holiday season with our dazzling light display throughout the zoo! Enjoy festive activities, holiday treats, and special animal presentations. A wonderful way to celebrate the season with family and friends!
+          </p>
+        </div>
+      </div>      
+    </section>
+  </main>
+
+  <!-- FOOTER start -->
+  <footer>
+    <div class="footer-container">
+      <div class="social-icons">
+        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://x.com"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <div class="footernav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="./events.html">Events</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+          <li><a href="./sitemap.html">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footerbottom">
+      <p class="mb-0">
+        Copyright &copy; 2024, Designed by
+        <span class="designer">PR-2024-04F</span>
+      </p>
+    </div>
+  </footer>
+  <!-- FOOTER /end -->
+
+  <script src="./bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="./js/nav.js"></script>
+  <script>
+    document.body.setAttribute('data-loading', false);
+  </script>
+</body>
+</html>
