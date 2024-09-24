@@ -14,38 +14,33 @@
     <link rel="stylesheet" href="./css/payment-form.css">
   </head>
   <body>
+    <span class="loader"></span>
+
     <header>
       <div class="topnav" id="myTopnav">
         <a href="/" class="site-icon">
-          <img src="./bird.png">
+          <img src="./images/bird-logo.png">
         </a>
     
-        <a href="#home" class="active">Home</a>
+        <a href="/" class="active">Home</a>
     
         <div class="dropdown">
           <button class="dropbtn">Categories</button>
           <div class="dropdown-content">
-            <a href="#">Land</a>
-            <a href="#">Aquatic</a>
-            <a href="#">Aerial</a>
+            <a href="./category/land.html">Terrestial</a>
+            <a href="./category/aquatic.html">Aquatic</a>
+            <a href="./category/aerial.html">Aerial</a>
           </div>
         </div>
         
-        <div class="dropdown">
-          <button class="dropbtn">About</button>
-          <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-          </div>
-        </div>
-        
-        <a href="#about">About</a>
+        <a href="./about.html">About</a>
+        <a href="./events.html">Events</a>
+  
         <a href="javascript:void(0);" class="icon">
           <i class="fa fa-bars"></i>
         </a>
     
-        <a class="active get-ticket-btn" href="#about">Get Ticket  <i style="margin-left: 4px;" class="fa-solid fa-arrow-right"></i></a>
+        <a class="active get-ticket-btn" href="./checkout.html">Get Ticket  <i style="margin-left: 4px;" class="fa-solid fa-arrow-right"></i></a>
       </div>
     
       <!-- Top Navigation Menu -->
@@ -56,9 +51,9 @@
     
         <div id="myLinks">
           <a href="/">Home</a>
-          <a href="#">Categories</a>
-          <a href="#">About</a>
-          <a class="active" href="#about" style="
+          <a href="./events.html">Events</a>
+          <a href="./about.html">About</a>
+          <a class="active" href="./checkout.html" style="
             padding: 2rem;
             text-align: end;
             padding-right: 50px;
@@ -261,32 +256,32 @@
     </section>
 
 
-      <!-- FOOTER start -->
-      <footer>
-        <div class="footer-container">
-          <div class="social-icons">
-            <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://x.com"><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
-          </div>
-          <div class="footernav">
-            <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="">Cateogries</a></li>
-              <li><a href="">Contact Us</a></li>
-              <li><a href="">About Us</a></li>
-            </ul>
-          </div>
+    <!-- FOOTER start -->
+    <footer>
+      <div class="footer-container">
+        <div class="social-icons">
+          <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://x.com"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
         </div>
-        <div class="footerbottom">
-          <p>
-            Copyright &copy; 2024, Designed by
-            <span class="designer">Aptech-Tigers</span>
-          </p>
+        <div class="footernav">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="./events.html">Events</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+            <li><a href="./sitemap.html">Sitemap</a></li>
+          </ul>
         </div>
-      </footer>
-      <!-- FOOTER /end -->
+      </div>
+      <div class="footerbottom">
+        <p class="mb-0">
+          Copyright &copy; 2024, Designed by
+          <span class="designer">PR-2024-04F</span>
+        </p>
+      </div>
+    </footer>
+    <!-- FOOTER /end -->
 
     <script src="./js/checkout.js"></script>
   </body>
