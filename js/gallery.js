@@ -13,14 +13,15 @@ const modalCaption = modal.querySelector('#caption');
 
 modal.querySelector('.close').onclick = () => { 
   modal.style.display = "none";
+  document.body.setAttribute('galley-open', false);
 };
 
 document.querySelectorAll('.img-modal').forEach(img => {
   img.addEventListener('click', function() {
-    console.log(this);
-
     modalImg.src = this.querySelector('.image').src;
     modalCaption.innerHTML = this.querySelector('.modal-overlay').innerHTML;
     modal.style.display = "block";
+
+    document.body.setAttribute('galley-open', true);
   });
 });

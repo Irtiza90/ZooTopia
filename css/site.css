@@ -1,3 +1,7 @@
 :root {
     --primary-color: #102416;
 }
+
+body[galley-open="true"] {
+  overflow: hidden;
+}
