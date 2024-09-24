@@ -3,10 +3,10 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <link rel="shortcut icon" href="./bird.png" type="image/x-png">
+    <link rel="shortcut icon" href="./images/bird-logo.png" type="image/x-png">
   
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./nav.css">
+    <link rel="stylesheet" href="./css/nav.css">
 
     <title>Your Ticket</title>
     <style>
@@ -110,11 +110,7 @@
         <div class="ticket-header">
           <h3 class="card-title text-center">Your Ticket Information</h3>
         </div>
-        <img
-          src="https://via.placeholder.com/600x200.png?text=Zoo+Image"
-          alt="Zoo"
-          class="ticket-image"
-        />
+        <!-- <img src="./images/ticket-thank-you.jpeg" alt="Zoo" class="ticket-image" /> -->
         <div class="card-body">
           <p><strong>Ticket ID:</strong> <span id="ticket-id"></span></p>
           <p><strong>Name:</strong> <span id="person-name"></span></p>
@@ -128,36 +124,6 @@
       </div>
     </div>
 
-    <script>
-      function generateTicketID() {
-        return "TKT-" + Math.floor(Math.random() * 1000000);
-      }
-
-      function formatDate(date) {
-        return date.toISOString().split("T")[0];
-      }
-
-      function displayTicketInfo(name, date, location) {
-        document.getElementById("ticket-id").innerText = generateTicketID();
-        document.getElementById("person-name").innerText = name;
-        document.getElementById("event-date").innerText = date;
-        document.getElementById("event-location").innerText = location;
-
-        // ticket expires in 1 week
-        const expiryDate = new Date();
-        expiryDate.setDate(expiryDate.getDate() + 7);
-        document.getElementById("expiry-date").innerText =
-          formatDate(expiryDate);
-      }
-
-      const urlParams = new URLSearchParams(window.location.search);
-      const name = urlParams.get('name');
-
-      displayTicketInfo(
-        name,
-        formatDate(new Date()),
-        "Safari Zone"
-      );
-    </script>
+    <script src="./js/ticket.js"></script>
   </body>
 </html>

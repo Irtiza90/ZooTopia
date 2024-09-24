@@ -1,0 +1,91 @@
+#gallery {
+  padding: 3rem;
+}
+
+#gallery .header {
+  text-align: center;
+  padding: 32px;
+}
+
+#gallery .image {
+  object-fit: cover;
+}
+
+#gallery .column {
+  float: left;
+  width: 33%;
+  padding: 10px;
+}
+
+#gallery .column img {
+  margin-top: 12px;
+}
+
+/* Clear floats after the columns */
+#gallery .row {
+  width: 100%;
+}
+
+#gallery .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* fading of pictures */
+#gallery .container {
+  position: relative;
+  width: 100%;
+  padding: 0;
+}
+
+#gallery .image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#gallery .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #000000;
+}
+
+#gallery .container:hover .overlay {
+  opacity: 85%;
+}
+
+#gallery .text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  #gallery .row > .column {
+   width: 50% !important; 
+  }
+
+  #gallery .row > .column:last-child {
+    width: 100% !important;
+   }
+}
+
+@media screen and (max-width: 576px) {
+  #gallery .row > .column {
+   width: 100% !important; 
+  }
+}

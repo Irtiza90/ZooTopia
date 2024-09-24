@@ -4,14 +4,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    <link rel="shortcut icon" href="./bird.png" type="image/x-png">
+    <link rel="shortcut icon" href="./images/bird-logo.png" type="image/x-png">
 
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="./nav.css">
-    <link rel="stylesheet" href="./footer.css">
-    <link rel="stylesheet" href="./pricing.css">
-    <link rel="stylesheet" href="./payment-form.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/pricing.css">
+    <link rel="stylesheet" href="./css/payment-form.css">
   </head>
   <body>
     <header>
@@ -288,45 +288,6 @@
       </footer>
       <!-- FOOTER /end -->
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        const form = document.querySelector("#payment-form form");
-        
-        form.addEventListener("submit", function(event) {
-          event.preventDefault();
-  
-          const fullName = document.getElementById("fname").value;
-          const email = document.getElementById("email").value;
-          const address = document.getElementById("adr").value;
-          const city = document.getElementById("city").value;
-          const state = document.getElementById("state").value;
-          const zip = document.getElementById("zip").value;
-          const cardName = document.getElementById("cname").value;
-          const cardNumber = document.getElementById("ccnum").value;
-          const expMonth = document.getElementById("expmonth").value;
-          const expYear = document.getElementById("expyear").value;
-          const cvv = document.getElementById("cvv").value;
-  
-          if (!fullName || !email || !address || !city || !state || !zip || !cardName || !cardNumber || !expMonth || !expYear || !cvv) {
-            alert("Please fill out all fields.");
-            return;
-          }
-  
-          const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-          if (!emailPattern.test(email)) {
-            alert("Please enter a valid email address.");
-            return;
-          }
-  
-          const cardPattern = /^\d{4}-\d{4}-\d{4}-\d{4}$/;
-          if (!cardPattern.test(cardNumber)) {
-            alert("Please enter a valid credit card number in the format: 1111-2222-3333-4444");
-            return;
-          }
-  
-          window.location.href = `/ticket.html?name=${fullName}`;
-        });
-      });
-    </script>
+    <script src="./js/checkout.js"></script>
   </body>
 </html>
