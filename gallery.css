@@ -73,3 +73,19 @@
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+  #gallery .row > .column {
+   width: 50% !important; 
+  }
+
+  #gallery .row > .column:last-child {
+    width: 100% !important;
+   }
+}
+
+@media screen and (max-width: 576px) {
+  #gallery .row > .column {
+   width: 100% !important; 
+  }
+}
