@@ -1,15 +1,10 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 footer {
   background-color: var(--primary-color, black);
+  max-width: 100%;
 }
 
 .footer-container {
-  width: 100;
+  width: 100%;
   padding: 70px 30px 20px;
 }
 
@@ -68,7 +63,7 @@ footer {
 }
 
 .footerbottom {
-  background-color: #000;
+  background: linear-gradient(45deg, var(--primary-color), black, black);
   padding: 20px;
   text-align: center;
 }
@@ -91,8 +86,15 @@ footer {
   }
 
   .footernav ul li {
-    width: 100;
+    width: 100%;
     text-align: center;
     margin: 10%;
+  }
+}
+
+@media (max-width: 600px) {
+  .footernav ul {
+    flex-wrap: wrap;
+    gap: 10px;
   }
 }

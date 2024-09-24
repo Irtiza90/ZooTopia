@@ -1,8 +1,20 @@
 #slider {
-    height: 70svh;
+    height: 90svh;
 }
 
 #slider .carousel-item {
-    height: 70svh;
+    height: 90svh;
     object-fit: cover;
+}
+
+@media (min-width: 700px) {
+  #slider {
+    height: 70svh;
+    min-height: 30rem;
+  }
+
+  #slider .carousel-item {
+    height: 70svh;
+    min-height: 30rem;
+  }
 }
