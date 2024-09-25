@@ -12,7 +12,7 @@ header {
 .topnav {
   /* overflow: hidden; */
   height: 3.5rem;
-  background: linear-gradient(90deg, #000000db, #17873aed);
+  background: linear-gradient(90deg, var(--color-2), var(--color-1));
 }
 
 header .site-icon {

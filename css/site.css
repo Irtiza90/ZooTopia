@@ -1,5 +1,8 @@
 :root {
-    --primary-color: #102416;
+  --primary-color: #102416;
+  
+  --color-1: #004c18ed;
+  --color-2: #000000db;
 }
 
 body[galley-open="true"] {
