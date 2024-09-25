@@ -1,0 +1,60 @@
+main {
+  background-color: #fafff9;
+  color: #333;
+}
+
+#about.container {
+  max-width: 900px;
+}
+
+#about h1 {
+  color: var(--color-1);
+}
+
+#about h2 {
+  border-bottom: 2px solid var(--color-1);
+  padding-bottom: 10px;
+  margin-top: 30px;
+}
+
+#about blockquote {
+  background-color: #e9ecef;
+  border-left: 5px solid var(--color-1);
+  padding: 15px;
+  border-radius: 5px;
+}
+
+#about hr {
+  border-top: 1px solid var(--color-1);
+}
+
+#about a {
+  color: var(--color-1);
+  text-decoration: none;
+}
+
+#about a:hover {
+  text-decoration: underline;
+}
+
+#about img {
+  height: 20rem !important;
+  max-width: 100%;
+}
+
+#about iframe {
+  max-width: 100%;
+}
+
+#about .img-fluid {
+  max-height: 300px;
+  object-fit: cover;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  #about img,
+  #about iframe {
+    width: 100%;
+  }
+}
