@@ -99,28 +99,38 @@
       </div>
     </header>
 
-    <div class="container mt-5">
-      <div class="thank-you">
-        <h2>Thank You for Visiting!</h2>
-        <p>We hope you enjoy your experience.</p>
-      </div>
-      <div class="card ticket-card p-4">
-        <div class="ticket-header">
-          <h3 class="card-title text-center">Your Ticket Information</h3>
-        </div>
-        <!-- <img src="./images/ticket-thank-you.jpeg" alt="Zoo" class="ticket-image" /> -->
-        <div class="card-body">
-          <p><strong>Ticket ID:</strong> <span id="ticket-id"></span></p>
-          <p><strong>Name:</strong> <span id="person-name"></span></p>
-          <p><strong>Date:</strong> <span id="event-date"></span></p>
-          <p><strong>Location:</strong> <span id="event-location"></span></p>
-          <p><strong>Expiry Date:</strong> <span id="expiry-date"></span></p>
-        </div>
-        <div class="ticket-footer">
-          <p class="mb-0">&copy; 2024 ZooTopia. All rights reserved.</p>
+    <section class="container mt-5">
+      <div id="ticket-error" class="d-none">
+        <div class="alert alert-danger" role="alert">
+          <h4 class="alert-heading">Ticket Not Found!</h4>
+          <p class="mb-1 mt-4">The Ticket was not found</p>
+          <p>Please try again later</p>
         </div>
       </div>
-    </div>
+
+      <div id="ticket">
+        <div class="thank-you">
+          <h2>Thank You for Visiting!</h2>
+          <p>We hope you enjoy your experience.</p>
+        </div>
+        <div class="card ticket-card p-4">
+          <div class="ticket-header">
+            <h3 class="card-title text-center">Your Ticket Information</h3>
+          </div>
+          <div class="card-body">
+            <p><strong>Ticket ID:</strong> <span id="ticket-id"></span></p>
+            <p><strong>Name:</strong> <span id="person-name"></span></p>
+            <p><strong>Number of Guests:</strong> <span id="number-of-guests"></span></p>
+            <p><strong>Date:</strong> <span id="event-date"></span></p>
+            <p><strong>Location:</strong> <span id="event-location"></span></p>
+            <p><strong>Expiry Date:</strong> <span id="expiry-date"></span></p>
+          </div>
+          <div class="ticket-footer">
+            <p class="mb-0">&copy; 2024 ZooTopia. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </section>   
 
     <script src="./js/ticket.js"></script>
   </body>
