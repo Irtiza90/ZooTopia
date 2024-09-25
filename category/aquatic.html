@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link rel="shortcut icon" href="../images/bird-logo.png" type="image/x-png">
+
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="../css/site.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/img-modal.css">
+  <link rel="stylesheet" href="../css/gallery.css">
+</head>
+<body data-loading="true">
+  <span class="loader"></span>
+
+  <header>
+    <div class="topnav" id="myTopnav">
+      <a href="/" class="site-icon">
+        <img src="../images/bird-logo.png">
+      </a>
+  
+      <a href="/" class="active">Home</a>
+  
+      <div class="dropdown">
+        <button class="dropbtn">Categories</button>
+        <div class="dropdown-content">
+          <a href="../category/land.html">Terrestial</a>
+          <a href="../category/aquatic.html">Aquatic</a>
+          <a href="../category/aerial.html">Aerial</a>
+        </div>
+      </div>
+      
+      <a href="../about.html">About</a>
+      <a href="../events.html">Events</a>
+
+      <a href="javascript:void(0);" class="icon">
+        <i class="fa fa-bars"></i>
+      </a>
+  
+      <a class="active get-ticket-btn" href="../checkout.html">Get Ticket  <i style="margin-left: 4px;" class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  
+    <!-- Top Navigation Menu -->
+    <div class="topnav-mobile">
+      <a href="/" style="width: 50px; height: 50px; padding: 0; background: none !important;">
+        <img src="../bird.png" style="width: 50px;height: 50px;float: left;object-fit: contain;">
+      </a>
+  
+      <div id="myLinks">
+        <a href="/">Home</a>
+        <a href="../events.html">Events</a>
+        <a href="../about.html">About</a>
+        <a class="active" href="../checkout.html" style="
+          padding: 2rem;
+          text-align: end;
+          padding-right: 50px;
+          background: #008000a1;
+        ">Get Ticket  <i style="margin-left: 4px;" class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="mobileMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section id="gallery">
+      <!-- Header -->
+      <div class="header">
+        <h1>Aquatic Gallery</h1>
+      </div>
+
+      <div id="img-gallery-modal" class="modal" style="display: none;">
+        <span class="close">×</span>
+        <img class="modal-content" src="">
+        <div id="caption">
+          <!-- filled by javascirpt -->
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          
+          <div class="container img-modal">
+            <img src="../images/aqua-7.jpg" alt="Avatar" class="image" style="width: 100%" />
+            <div class="overlay">
+              <div class="text">African Penguin</div>
+            </div>
+            <div class="modal-overlay d-none">
+              <p>Scientific Name: Spheniscus demersus</p>
+              <p>Sleeping Hours: African penguins typically sleep on land during the night and often take short naps throughout the day.</p>
+              <p>Meal Hours: They are usually fed twice a day, around 9:00 AM and 3:00 PM, with fish being their primary diet.</p>
+              <p>Description: These charming birds are known for their distinctive black and white coloring and are often found waddling on the rocky shores of their habitats. They are social creatures that thrive in colonies.</p>
+            </div>
+          </div>
+          <div class="container img-modal">
+            <img src="../images/aqua-12.jpg" alt="Avatar" class="image" style="width: 100%" />
+            <div class="overlay">
+              <div class="text">Green Sea Turtle</div>
+            </div>
+            <div class="modal-overlay d-none">
+              <p>Scientific Name: Chelonia mydas</p>
+              <p>Sleeping Hours: These turtles sleep underwater, usually resting on the ocean floor or beneath rocks, for several hours at a time.</p>
+              <p>Meal Hours: They are typically fed around 10:00 AM and 4:00 PM, receiving a mix of greens and other aquatic plants.</p>
+              <p>Description: Recognizable by their large, oval shells and strong flippers, green sea turtles are herbivores that primarily feed on seagrass and algae. They are known for their long migrations and gentle nature.</p>
+            </div>
+          </div>
+          <div class="container img-modal">
+            <img src="../images/aqua-5.jpg" alt="Avatar" class="image" style="width: 100%" />
+            <div class="overlay">
+              <div class="text">Amazon River Dolphin</div>
+            </div>
+            <div class="modal-overlay d-none">
+              <p>Scientific Name: Inia geoffrensis</p>
+              <p>Sleeping Hours: Amazon river dolphins sleep in short intervals, often resting just below the water's surface while still being partially alert to their surroundings.</p>
+              <p>Meal Hours: Feeding times usually occur around 11:00 AM and 2:00 PM, with a diet primarily consisting of fish and crustaceans.</p>
+              <p>Description: Also known as the pink dolphin, this species is famous for its unique coloration and playful behavior. They are intelligent and social animals, often seen swimming in pods.</p>
+            </div>
+          </div>
+          
+          
+        </div>
+        <div class="column">
+          <div class="container img-modal">
+            <img src="../images/aqua-2.jpg" alt="Avatar" class="image" style="width: 100%" />
+            <div class="overlay">
+              <div class="text">Clownfish</div>
+            </div>
+            <div class="modal-overlay d-none">
+              <p>Scientific Name: Amphiprioninae</p>
+              <p>Sleeping Hours: Clownfish typically rest at night, hiding within the anemone for safety.</p>
+              <p>Meal Hours: They are fed once a day, usually around 1:00 PM, with a diet of pellets, flakes, and occasional live food.</p>
+              <p>Description: Famous for their bright orange color and white stripes, clownfish live among sea anemones and are known for their symbiotic relationship with these creatures. They are playful and often found darting in and out of anemones.</p>
+            </div>
+          </div>
+          <div class="container img-modal">
+            <img src="../images/aqua-15.jpg" alt="Avatar" class="image" style="width: 100%" />
+            <div class="overlay">
+              <div class="text">Moon Jellyfish</div>
+            </div>
+            <div class="modal-overlay d-none">
+              <p>Scientific Name: Aurelia aurita</p>
+              <p>Sleeping Hours: Jellyfish do not sleep like mammals; instead, they have periods of rest where they move more slowly and react less to stimuli.</p>
+              <p>Meal Hours: Jellyfish are fed once a day, around 11:30 AM, with a diet consisting of small plankton and zooplankton.</p>
+              <p>Description: Moon Jellyfish are known for their delicate, translucent bodies and soothing, pulsating movements. They are primarily found drifting in oceans worldwide, moving with the currents and feeding on small plankton. Though simple in form, they are mesmerizing to watch as they float through the water.</p>
+            </div>
+          </div>
+          <div class="container img-modal">
+            <img src="../images/aqua-6.jpg" alt="Avatar" class="image" style="width: 100%" />
+            <div class="overlay">
+              <div class="text">Common Octopus</div>
+            </div>
+            <div class="modal-overlay d-none">
+              <p>Scientific Name: Octopus vulgaris</p>
+              <p>Sleeping Hours: Octopuses are crepuscular, meaning they are most active during dawn and dusk, often resting in their dens during the day.</p>
+              <p>Meal Hours: They are typically fed in the late afternoon, around 4:00 PM, with a diet of crabs, shrimp, and small fish.</p>
+              <p>Description: Known for their intelligence and ability to camouflage, common octopuses have eight arms lined with sensitive suckers. They are skilled hunters and can solve puzzles to access food.</p>
+            </div>
+          </div>
+          <div class="container img-modal">
+            <img src="../images/aqua-8.jpg" alt="Avatar" class="image" style="width: 100%" />
+            <div class="overlay">
+              <div class="text">Pacific Walrus</div>
+            </div>
+            <div class="modal-overlay d-none">
+              <p>Scientific Name: Odobenus rosmarus divergens</p>
+              <p>Sleeping Hours: Walruses sleep both on land and in the water, often taking short naps while floating or resting on ice.</p>
+              <p>Meal Hours: They are generally fed in the morning, around 9:00 AM, with a diet primarily consisting of clams and other mollusks.</p>
+              <p>Description: Recognizable by their long tusks and whiskers, walruses are large marine mammals that often gather on ice or beaches. They are social animals, often seen lounging together in groups.</p>
+            </div>
+          </div>
+          
+        </div>
+        <div class="column">
+          <div class="container img-modal">
+            <img src="../images/aqua-13.jpg" alt="Avatar" class="image" style="width: 100%" />
+            <div class="overlay">
+              <div class="text">Beluga Whale</div>
+            </div>
+            <div class="modal-overlay d-none">
+              <p>Scientific Name: Delphinapterus leucas</p>
+              <p>Sleeping Hours: Beluga whales sleep for short intervals throughout the day, floating near the surface to maintain breathing.</p>
+              <p>Meal Hours: Feeding usually occurs around 10:00 AM and 4:00 PM, with a diet of fish, squid, and crustaceans.</p>
+              <p>Description: Known for their white color and "smiling" appearance, beluga whales are highly social marine mammals. They use echolocation to navigate and communicate and are often referred to as the "canaries of the sea" due to their wide range of vocalizations.</p>
+            </div>
+          </div>
+          <div class="container img-modal">
+            <img src="../images/aqua-14.jpg" alt="Avatar" class="image" style="width: 100%" />
+            <div class="overlay">
+              <div class="text">Sea Otter</div>
+            </div>
+            <div class="modal-overlay d-none">
+              <p>Scientific Name: Enhydra lutris</p>
+              <p>Sleeping Hours: Sea otters sleep floating on their backs, often wrapping themselves in kelp to avoid drifting away.</p>
+              <p>Meal Hours: Feeding typically occurs around 9:30 AM and 3:30 PM, with a diet of shellfish, sea urchins, and crabs.</p>
+              <p>Description: Sea otters are playful marine mammals known for their thick fur and use of tools to open shellfish. They are key species in maintaining healthy kelp forests by controlling sea urchin populations.</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER start -->
+  <footer>
+    <div class="footer-container">
+      <div class="social-icons">
+        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://x.com"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <div class="footernav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="../events.html">Events</a></li>
+          <li><a href="../contact.html">Contact Us</a></li>
+          <li><a href="../sitemap.html">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footerbottom">
+      <p class="mb-0">
+        Copyright &copy; 2024, Designed by
+        <span class="designer">PR-2024-04F</span>
+      </p>
+    </div>
+  </footer>
+  <!-- FOOTER /end -->
+
+  <script src="../bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="../js/nav.js"></script>
+  <script src="../js/gallery.js"></script>
+  <script>
+    document.body.setAttribute('data-loading', false);
+  </script>
+</body>
+</html>

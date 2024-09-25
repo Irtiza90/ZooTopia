@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link rel="shortcut icon" href="../images/bird-logo.png" type="image/x-png">
+
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="../css/site.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/img-modal.css">
+  <link rel="stylesheet" href="../css/gallery.css">
+</head>
+<body data-loading="true">
+  <span class="loader"></span>
+
+  <header>
+    <div class="topnav" id="myTopnav">
+      <a href="/" class="site-icon">
+        <img src="../images/bird-logo.png">
+      </a>
+  
+      <a href="/" class="active">Home</a>
+  
+      <div class="dropdown">
+        <button class="dropbtn">Categories</button>
+        <div class="dropdown-content">
+          <a href="../category/land.html">Terrestial</a>
+          <a href="../category/aquatic.html">Aquatic</a>
+          <a href="../category/aerial.html">Aerial</a>
+        </div>
+      </div>
+      
+      <a href="../about.html">About</a>
+      <a href="../events.html">Events</a>
+
+      <a href="javascript:void(0);" class="icon">
+        <i class="fa fa-bars"></i>
+      </a>
+  
+      <a class="active get-ticket-btn" href="../checkout.html">Get Ticket  <i style="margin-left: 4px;" class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  
+    <!-- Top Navigation Menu -->
+    <div class="topnav-mobile">
+      <a href="/" style="width: 50px; height: 50px; padding: 0; background: none !important;">
+        <img src="../bird.png" style="width: 50px;height: 50px;float: left;object-fit: contain;">
+      </a>
+  
+      <div id="myLinks">
+        <a href="/">Home</a>
+        <a href="../events.html">Events</a>
+        <a href="../about.html">About</a>
+        <a class="active" href="../checkout.html" style="
+          padding: 2rem;
+          text-align: end;
+          padding-right: 50px;
+          background: #008000a1;
+        ">Get Ticket  <i style="margin-left: 4px;" class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="mobileMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section id="gallery">
+      <!-- Header -->
+      <div class="header">
+        <h1>Aerial Gallery</h1>
+      </div>
+
+      <div id="img-gallery-modal" class="modal" style="display: none;">
+        <span class="close">×</span>
+        <img class="modal-content" src="">
+        <div id="caption">
+          <!-- filled by javascirpt -->
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <div class="container img-modal">
+            <img src="../images/bird-1.jpg" alt="Avatar" class="image" style="width: 100%">
+            <div class="overlay">
+              <div class="text">Bald Eagle</div>
+            </div>
+            <div class="modal-overlay d-none">
+              <p>Scientific Name: Haliaeetus leucocephalus</p>
+              <p>Sleeping Hours: Bald eagles typically roost in tall trees at night, often sleeping in the same spot.</p>
+              <p>Meal Hours: They are generally fed once a day around 10:00 AM, primarily eating fish and small mammals.</p>
+              <p>Description: A symbol of strength and freedom, the bald eagle has a striking white head and tail with a dark brown body. They are skilled hunters and often seen soaring high in the sky.</p>
+            </div>
+          </div>
+          <div class="container img-modal">
+            <img src="../images/bird-11.jpg" alt="Avatar" class="image" style="width: 100%">
+            <div class="overlay">
+              <div class="text">Scarlet Macaw</div>
+            </div>
+            <div class="modal-overlay d-none">
+              <p>Scientific Name: Ara macao</p>
+              <p>Sleeping Hours: These parrots roost in trees at night and prefer to sleep in groups for safety.</p>
+              <p>Meal Hours: They are typically fed twice a day, around 9:30 AM and 3:30 PM, with a diet of fruits, nuts, and seeds.</p>
+              <p>Description: Known for their vibrant red, yellow, and blue feathers, scarlet macaws are intelligent and social birds. They thrive in rainforest habitats and are known for their loud calls.</p>
+            </div>
+          </div>
+          <div class="container img-modal">
+            <img src="../images/bird-14.jpg" alt="Avatar" class="image" style="width: 100%">
+            <div class="overlay">
+              <div class="text">Snowy Owl</div>
+            </div>
+            <div class="modal-overlay d-none">
+              <p>Scientific Name: Bubo scandiacus</p>
+              <p>Sleeping Hours: Snowy owls are mostly active during the day and sleep at night, often resting on high perches or the ground.</p>
+              <p>Meal Hours: These owls are usually fed once a day at 11:30 AM, with a diet consisting of small mammals like lemmings and voles.</p>
+              <p>Description: Snowy owls are large, white birds with striking yellow eyes. Native to the Arctic regions, they are one of the heaviest owl species. Their thick feathers help them survive in cold climates, and they are well-known for their silent flight and hunting prowess.</p>
+            </div>
+          </div>
+          
+        </div>
+        <div class="column">
+          <div class="container img-modal">
+            <img src="../images/bird-12.jpg" alt="Avatar" class="image" style="width: 100%">
+            <div class="overlay">
+              <div class="text">Golden Pheasant</div>
+            </div>
+            <div class="modal-overlay d-none">
+              <p>Scientific Name: Chrysolophus pictus</p>
+              <p>Sleeping Hours: Golden pheasants roost in trees at night, staying hidden from predators.</p>
+              <p>Meal Hours: They are typically fed in the morning around 9:00 AM and again in the late afternoon at 4:00 PM. Their diet includes seeds, berries, and insects.</p>
+              <p>Description: The golden pheasant, also known as the Chinese pheasant, is admired for its striking golden-yellow crest and vivid red body. This colorful bird is native to the forests of western China and is known for its shy, elusive nature in the wild.</p>
+            </div>
+          </div>
+          
+          <div class="container img-modal">
+            <img src="../images/bird-13.jpg" alt="Avatar" class="image" style="width: 100%">
+            <div class="overlay">
+              <div class="text">Red-Crowned Crane</div>
+            </div>
+            <div class="modal-overlay d-none">
+              <p>Scientific Name: Grus japonensis</p>
+              <p>Sleeping Hours: Red-crowned cranes sleep standing on one leg, often in shallow water, to stay safe from predators.</p>
+              <p>Meal Hours: Their feeding time is usually at 10:00 AM and again at 3:00 PM. Their diet includes fish, amphibians, and small insects.</p>
+              <p>Description: The red-crowned crane is a majestic bird with a tall, graceful figure and distinctive red patch on its head. Known for their elegant courtship dances, these cranes are a symbol of longevity and good fortune in many Asian cultures.</p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="container img-modal">
+            <img src="../images/bird-9.jpg" alt="Avatar" class="image" style="width: 100%">
+            <div class="overlay">
+              <div class="text">Peacock</div>
+            </div>
+            <div class="modal-overlay d-none">
+              <p>Scientific Name: Pavo cristatus</p>
+              <p>Sleeping Hours: Peacocks roost in trees at night for safety from predators.</p>
+              <p>Meal Hours: They are generally fed in the morning around 8:00 AM, with a diet consisting of grains, seeds, and some vegetation.</p>
+              <p>Description: Famous for their spectacular tail feathers, peacocks are large birds known for their vibrant colors and intricate patterns. Males fan their tails to attract females during mating displays.</p>
+            </div>
+          </div>
+          <div class="container img-modal">
+            <img src="../images/bird-4.jpg" alt="Avatar" class="image" style="width: 100%">
+            <div class="overlay">
+              <div class="text">Flamingo</div>
+            </div>
+            <div class="modal-overlay d-none">
+              <p>Scientific Name: Phoenicopterus roseus</p>
+              <p>Sleeping Hours: Flamingos sleep standing on one leg, often in shallow water, to stay balanced and safe from predators.</p>
+              <p>Meal Hours: They are typically fed around 12:00 PM, with a diet primarily consisting of specialized pellets and fresh vegetables.</p>
+              <p>Description: Recognizable by their long legs and pink feathers, flamingos are wading birds that often stand on one leg. Their unique coloration comes from their diet of algae and crustaceans.</p>
+            </div>
+          </div>
+          
+          <div class="container img-modal">
+            <img src="../images/bird-8.jpg" alt="Avatar" class="image" style="width: 100%">
+            <div class="overlay">
+              <div class="text">African Grey Parrot</div>
+            </div>
+            <div class="modal-overlay d-none">
+              <p>Scientific Name: Psittacus erithacus</p>
+              <p>Sleeping Hours: They usually sleep at night, often nestled in their nesting boxes or among tree branches.</p>
+              <p>Meal Hours: Feeding usually occurs around 11:00 AM and 4:00 PM, with a diet of pellets, fresh fruits, and vegetables.</p>
+              <p>Description: Renowned for their exceptional intelligence and ability to mimic human speech, African grey parrots are medium-sized birds with striking grey feathers and a bright red tail.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER start -->
+  <footer>
+    <div class="footer-container">
+      <div class="social-icons">
+        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://x.com"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <div class="footernav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="../events.html">Events</a></li>
+          <li><a href="../contact.html">Contact Us</a></li>
+          <li><a href="../sitemap.html">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footerbottom">
+      <p class="mb-0">
+        Copyright &copy; 2024, Designed by
+        <span class="designer">PR-2024-04F</span>
+      </p>
+    </div>
+  </footer>
+  <!-- FOOTER /end -->
+
+  <script src="../bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="../js/nav.js"></script>
+  <script src="../js/gallery.js"></script>
+  <script>
+    document.body.setAttribute('data-loading', false);
+  </script>
+</body>
+</html>

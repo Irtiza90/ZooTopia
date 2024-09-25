@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link rel="shortcut icon" href="../images/bird-logo.png" type="image/x-png">
+
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="../css/site.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/img-modal.css">
+  <link rel="stylesheet" href="../css/gallery.css">
+</head>
+<body data-loading="true">
+  <span class="loader"></span>
+
+  <header>
+    <div class="topnav" id="myTopnav">
+      <a href="/" class="site-icon">
+        <img src="../images/bird-logo.png">
+      </a>
+  
+      <a href="/" class="active">Home</a>
+  
+      <div class="dropdown">
+        <button class="dropbtn">Categories</button>
+        <div class="dropdown-content">
+          <a href="../category/land.html">Terrestial</a>
+          <a href="../category/aquatic.html">Aquatic</a>
+          <a href="../category/aerial.html">Aerial</a>
+        </div>
+      </div>
+      
+      <a href="../about.html">About</a>
+      <a href="../events.html">Events</a>
+
+      <a href="javascript:void(0);" class="icon">
+        <i class="fa fa-bars"></i>
+      </a>
+  
+      <a class="active get-ticket-btn" href="../checkout.html">Get Ticket  <i style="margin-left: 4px;" class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  
+    <!-- Top Navigation Menu -->
+    <div class="topnav-mobile">
+      <a href="/" style="width: 50px; height: 50px; padding: 0; background: none !important;">
+        <img src="../bird.png" style="width: 50px;height: 50px;float: left;object-fit: contain;">
+      </a>
+  
+      <div id="myLinks">
+        <a href="/">Home</a>
+        <a href="../events.html">Events</a>
+        <a href="../about.html">About</a>
+        <a class="active" href="../checkout.html" style="
+          padding: 2rem;
+          text-align: end;
+          padding-right: 50px;
+          background: #008000a1;
+        ">Get Ticket  <i style="margin-left: 4px;" class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="mobileMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section id="gallery">
+      <!-- Header -->
+      <div class="header">
+        <h1>Animal gallery</h1>
+      </div>
+
+      <div id="img-gallery-modal" class="modal" style="display: none;">
+        <span class="close">×</span>
+        <img class="modal-content" src="">
+        <div id="caption">
+          <!-- filled by javascirpt -->
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <div class="container img-modal">
+            <img src="../images/3.jpg" alt="Avatar" class="image" style="width: 100%" />
+            <div class="overlay">
+              <div class="text">African lion</div>
+            </div>
+            <div class="modal-overlay d-none">
+              <p>Scientific Name: Panthera leo</p> <p>Sleeping Hours: 16-20 hours per day</p> <p>Meal Hours: Lions usually hunt early in the morning or late in the evening. In the zoo, they are fed once a day, often in the early afternoon.</p> <p>Description: Known as the "king of the jungle," African lions are social felines that live in prides. Their majestic manes and powerful roars make them a highlight of any zoo.</p>
+            </div>
+          </div>
+
+          <div class="container img-modal">
+            <img src="../images/8.jpg" alt="Avatar" class="image" style="width: 100%" />
+            <div class="overlay">
+              <div class="text">Giraffe</div>
+            </div>
+            <div class="modal-overlay d-none">
+              <p>Scientific Name: Giraffa camelopardalis</p> <p>Sleeping Hours: 4-6 hours per day</p> <p>Meal Hours: Giraffes graze throughout the day, with peak feeding times in the morning and late afternoon. They primarily eat leaves from acacia trees.</p> <p>Description: With their long necks and legs, giraffes are the tallest land animals. Their unique patterns and graceful movements make them a favorite among zoo visitors.</p>
+            </div>
+          </div>
+          <div class="container img-modal">
+            <img src="../images/5.jpg" alt="Avatar" class="image" style="width: 100%; height: 29.4rem;" />
+            <div class="overlay">
+              <div class="text">Zebra</div>
+            </div>
+            <div class="modal-overlay d-none">
+              <p>Scientific Name: Equus zebra</p> <p>Sleeping Hours: 12-16 hours per day</p> <p>Meal Hours: Zebras are primarily grazers, feeding during the day and night. They mainly eat grass and leaves, with peak feeding times in the morning and late afternoon.</p> <p>Description: Known for their distinctive black-and-white stripes, zebras are social animals that live in herds. They are native to Africa and are closely related to horses and donkeys.</p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="container img-modal">
+            <img src="../images/22.jpg" alt="Avatar" class="image" style="width: 100%; height: 550px;" />
+            <div class="overlay">
+              <div class="text">Meerkat</div>
+            </div>
+            <div class="modal-overlay d-none">
+              <p>Scientific Name: Suricata suricatta</p> <p>Sleeping Hours: 10-12 hours per day</p> <p>Meal Hours: Meerkats are most active in the morning and late afternoon. They forage for insects, plants, and small animals.</p> <p>Description: Social and highly energetic, meerkats live in groups called mobs. Their upright stance and playful behavior make them engaging to watch.</p>
+            </div>
+          </div>
+          <div class="container img-modal">
+            <img src="../images/25.jpg" alt="Avatar" class="image" style="width: 100%" />
+            <div class="overlay">
+              <div class="text">American Alligator</div>
+            </div>
+            <div class="modal-overlay d-none">
+              <p>Scientific Name: Alligator mississippiensis</p> <p>Sleeping Hours: 12-14 hours per day</p> <p>Meal Hours: Alligators typically hunt in the early morning and late evening. In captivity, they are fed every 2-3 days.</p> <p>Description: These large reptiles are native to the southeastern United States. They are known for their powerful jaws and distinctive bumpy skin.</p>
+            </div>
+          </div>
+          <div class="container img-modal">
+            <img src="../images/20.jpg" alt="Avatar" class="image" style="width: 100%" />
+            <div class="overlay">
+              <div class="text">Hippopotamus</div>
+            </div>
+            <div class="modal-overlay d-none">
+              <p>Scientific Name: Hippopotamus amphibius</p> <p>Sleeping Hours: 16-20 hours per day</p> <p>Meal Hours: Hippos are primarily nocturnal feeders, grazing on grass in the evening and early morning. They are fed a variety of vegetation in captivity, often in the early afternoon.</p> <p>Description: Hippos are massive semi-aquatic mammals with a large, barrel-shaped body. They spend most of their time in water to keep cool and protect their skin from the sun.</p>
+            </div>
+          </div>
+          <div class="container img-modal">
+            <img src="../images/31.jpg" alt="Avatar" class="image" style="width: 100%" />
+            <div class="overlay">
+              <div class="text">Red Panda</div>
+            </div>
+            <div class="modal-overlay d-none">
+              <p>Scientific Name: Ailurus fulgens</p> <p>Sleeping Hours: 12-16 hours per day</p> <p>Meal Hours: Red pandas are most active in the early morning and late afternoon. They eat bamboo, fruits, and small animals.</p> <p>Description: Despite their name, red pandas are not closely related to giant pandas. They are smaller, with reddish-brown fur and a bushy tail.</p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="container img-modal">
+            <img src="../images/12.jpg" alt="Avatar" class="image" style="width: 100%; height: 33.4rem;" />
+            <div class="overlay">
+              <div class="text">African Elephant</div>
+            </div>
+            <div class="modal-overlay d-none">
+              <p>Scientific Name: Elephas maximus</p> <p>Sleeping Hours: 4-6 hours per day</p> <p>Meal Hours: Elephants eat throughout the day, with peak feeding times in the morning and late afternoon. They consume a variety of vegetation, including grass, fruit, and bark.</p> <p>Description: These large, intelligent mammals are known for their impressive trunks and tusks. Asian elephants are smaller than their African counterparts and have distinctive smaller ears.</p>
+            </div>
+          </div>
+          <div class="container img-modal">
+            <img src="../images/1.jpg" alt="Avatar" class="image" style="width: 100%" />
+            <div class="overlay">
+              <div class="text">Wolf</div>
+            </div>
+            <div class="modal-overlay d-none">
+              <p>Scientific Name: Canis lupus</p> <p>Sleeping Hours: 8-12 hours per day</p> <p>Meal Hours: Wolves are primarily nocturnal and often hunt in packs during the evening and early morning. They can go several days without eating between hunts.</p> <p>Description: Wolves are highly social animals that live in packs, known for their complex social structures and vocalizations. They are found in a variety of habitats across North America, Europe, and Asia.</p>
+            </div>
+          </div>
+          <div class="container img-modal">
+            <img src="../images/34.jpg" alt="Avatar" class="image" style="width: 100%" />
+            <div class="overlay">
+              <div class="text">Tiger</div>
+            </div>
+            <div class="modal-overlay d-none">
+              <p>Scientific Name: Panthera tigris</p> <p>Sleeping Hours: 16-20 hours per day</p> <p>Meal Hours: Tigers are primarily nocturnal hunters, usually active at night. In captivity, they are typically fed once or twice a day.</p> <p>Description: Tigers are the largest wild cats and are known for their powerful build and striking orange and black stripes. They are solitary animals and primarily found in Asia.</p>
+            </div>
+          </div>
+          <div class="container img-modal">
+            <img src="../images/17.jpg" alt="Avatar" class="image" style="width: 100%" />
+            <div class="overlay">
+              <div class="text">Giant Panda</div>
+            </div>
+            <div class="modal-overlay d-none">
+              <p>Scientific Name: Ailuropoda melanoleuca</p> <p>Sleeping Hours: 10-16 hours per day</p> <p>Meal Hours: Pandas eat most frequently in the morning and late afternoon. Their diet is primarily bamboo, but they may also eat fruits and small amounts of meat.</p> <p>Description: Native to China, giant pandas are beloved for their black-and-white fur and gentle demeanor. They spend much of their time eating and sleeping.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER start -->
+  <footer>
+    <div class="footer-container">
+      <div class="social-icons">
+        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://x.com"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <div class="footernav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="../events.html">Events</a></li>
+          <li><a href="../contact.html">Contact Us</a></li>
+          <li><a href="../sitemap.html">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footerbottom">
+      <p class="mb-0">
+        Copyright &copy; 2024, Designed by
+        <span class="designer">PR-2024-04F</span>
+      </p>
+    </div>
+  </footer>
+  <!-- FOOTER /end -->
+
+  <script src="../bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="../js/nav.js"></script>
+  <script src="../js/gallery.js"></script>
+  <script>
+    document.body.setAttribute('data-loading', false);
+  </script>
+</body>
+</html>
