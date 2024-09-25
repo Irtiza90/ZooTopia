@@ -11,10 +11,18 @@ const modal = document.getElementById("img-gallery-modal");
 const modalImg = modal.querySelector('img');
 const modalCaption = modal.querySelector('#caption');
 
-modal.querySelector('.close').onclick = () => { 
+function closeModal() {
   modal.style.display = "none";
   document.body.setAttribute('galley-open', false);
-};
+}
+
+modal.querySelector('.close').onclick = closeModal;
+
+document.addEventListener('keydown', function(event) {
+  if (event.key === "Escape") {
+    closeModal();
+  }
+});
 
 document.querySelectorAll('.img-modal').forEach(img => {
   img.addEventListener('click', function() {
