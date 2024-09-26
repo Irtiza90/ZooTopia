@@ -7,20 +7,16 @@
 }
 
 #payment-form .row {
-  display: -ms-flexbox; /* IE10 */
   display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
   margin: 0 -16px;
 }
 
 #payment-form .col-25 {
-  -ms-flex: 25%; /* IE10 */
   flex: 25%;
 }
 
 #payment-form .col-50 {
-  -ms-flex: 50%; /* IE10 */
   flex: 50%;
 }
 

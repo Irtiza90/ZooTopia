@@ -21,7 +21,6 @@
   margin-top: 12px;
 }
 
-/* Clear floats after the columns */
 #gallery .row {
   width: 100%;
 }
@@ -32,7 +31,6 @@
   clear: both;
 }
 
-/* fading of pictures */
 #gallery .container {
   position: relative;
   width: 100%;
